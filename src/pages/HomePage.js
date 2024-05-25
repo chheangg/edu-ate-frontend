@@ -5,7 +5,6 @@ const HomePage = () => {
     <MainLayout>
       <div>
         Home Page!
-        dadawdw
       </div>
     </MainLayout>
   )
