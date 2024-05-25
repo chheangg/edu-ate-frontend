@@ -1,6 +1,9 @@
 import Button from "../../../components/Button/Button"
+import { useOnboardingStore } from "../../../stores/onboarding"
 
-const FirstBoarding = ({ nextStageEvent }) => {
+const FirstBoarding = () => {
+  const nextStage = useOnboardingStore((state) => state.nextStage)
+
   const findLocalOpportunitiesEvent = () => {
     const options = {
       enableHighAccuracy: true,
@@ -11,7 +14,7 @@ const FirstBoarding = ({ nextStageEvent }) => {
     function success(pos) {
       const crd = pos.coords;
   
-      nextStageEvent()
+      nextStage()
     }
     
     function error(err) {
@@ -22,7 +25,7 @@ const FirstBoarding = ({ nextStageEvent }) => {
   }
 
   const findInternationalOpportunity = () => {
-    nextStageEvent()
+    nextStage()
   }
   
 
