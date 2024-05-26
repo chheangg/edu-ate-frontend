@@ -35,7 +35,7 @@ const FirstBoarding = () => {
       <h2 className="text-center text-3xl font-semibold text-purple-100 mt-12">{"Let's start to ATE <3"}</h2>
       <div className="mt-20 flex flex-col px-10 gap-8">
         <Button onClick={findLocalOpportunitiesEvent} className='text-2xl text-purple-100 font-thin'>Opportunities Around Me 🏡</Button>
-        <Button onClick={findInternationalOpportunity} className='text-2xl text-purple-100 font-thin'>All of the opportunities 😎</Button>
+        <Button onClick={findInternationalOpportunity} className='text-2xl text-purple-100 font-thin'>All of the Opportunities 😎</Button>
       </div>
     </>
   )
