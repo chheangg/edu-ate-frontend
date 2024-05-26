@@ -16,14 +16,13 @@ const OpportunityList = ({ children, query = {} }) => {
   })
 
   if (error) return 'An error has occurred: ' + error.message
-  console.log(opportunities)
 
   return (
     <div className="grid auto-rows-[1fr] gap-8  py-8 px-4">
       { isPending ?
-        Array(5).map(() => <OpportunitySkeleton />)
+        Array(5).map((i) => <OpportunitySkeleton key={i} />)
         :
-        opportunities.map((d) => <OpportunityListItem {...d} />)
+        opportunities.map((d) => <OpportunityListItem key={d.id} {...d} />)
       }
     </div>
   )

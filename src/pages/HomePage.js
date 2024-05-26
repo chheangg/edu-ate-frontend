@@ -1,5 +1,5 @@
 import MainLayout from "../components/layouts/MainLayout"
-import Search from "../components/Search"
+import Search from "../features/Search"
 import Section from "../components/Section"
 import MainNav from "../features/MainNav"
 import Carousel from "../features/Carousel"
