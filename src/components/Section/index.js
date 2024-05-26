@@ -1,5 +1,5 @@
 const Section = ({children, className}) => (
-  <section className={className}>
+  <section className={`min-w-full ${className}`}>
     {children}
   </section>
 )

@@ -6,11 +6,11 @@ module.exports = {
   theme: {
     container: {
       padding: {
-        DEFAULT: '3rem',
-        sm: '4rem',
-        lg: '5rem',
-        xl: '6rem',
-        '2xl': '7rem',
+        DEFAULT: '2rem',
+        sm: '3rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
       },
     },
     extend: {},

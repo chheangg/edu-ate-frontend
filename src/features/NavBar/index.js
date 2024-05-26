@@ -4,7 +4,7 @@ import LogoBtn from "./components/LogoBtn"
 
 const NavBar = () => {
   return (
-    <nav className="navbar bg-primary-white pt-8 pb-4 container">
+    <nav className="navbar bg-primary-white pt-8 pb-4 container min-w-full">
       <div className="flex-1">
         <Location />
       </div>
