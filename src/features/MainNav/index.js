@@ -5,6 +5,7 @@ import { iconData } from "./data"
 
 const MainNav = () => {
   const { isPending, error, data } = useQuery({
+    queryKey: ['categories'],
     queryFn: getCategories
   })
 
@@ -15,6 +16,9 @@ const MainNav = () => {
   )
 
   if (error) return 'An error has occurred: ' + error.message
+
+  if (!data.data) return
+  console.log(data, "HEY", iconData)
 
   const formattedData = data.data.map((d) => {
     const { icon } = iconData.find((iD) => iD.name.toLowerCase() === d.name.toLowerCase())
